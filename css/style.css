@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 13px;
+}
+
+:root {
+  --body: #191d24;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* height: 700vh; */
+}
+
+.site-nav {
+  position: absolute;
+  top: 0;
+  /* right: 0;
+  left: 0; */
+  z-index: 50;
+}
+
+.nav-link.current-section {
+  border-bottom: 2px solid #191d24;
+}
+
+.site-nav-scroll {
+  position: fixed;
+  background-color: #ffffffee;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 5px #00000020;
+  animation: toShow 1s linear;
+}
+
+@keyframes toShow {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.navbar-toggler:focus {
+  /* outline: none !important; */
+}
+
+.site-logo {
+  width: 150px;
+}
+
+.home-back {
+  background-image: url("../_Data/Bg-Shape.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 50%;
+}
+
+.home {
+  position: relative;
+}
+
+.social-v {
+  position: absolute;
+  bottom: 50px;
+  left: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-v a {
+  display: block;
+  margin-bottom: 10px;
+  transition: 1s !important;
+}
+
+.social-v a:hover {
+  transform: scale(1.3) !important;
+}
+
+.scroll_next {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  /* border: 2px solid black; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  border-radius: 20px;
+  padding: 0.5rem 1.25rem;
+}
+
+.w {
+  width: 90%;
+}
+
+.background_i {
+  background-image: url("/_Data/Group\ 182.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: #eceafe; */
+}
+
+.btn_BB {
+  /* float: right; */
+  /* text-align: center; */
+}
+
+.services {
+  background-image: url("/_Data/Group\ 182.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services-card {
+  border-radius: 35px !important;
+  border: none;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.05) !important;
+  transition: 0.5s;
+}
+.services-card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  transform: scale(0.98);
+}
+
+.services-card img {
+  transition: 0.5s;
+}
+
+.services-card:hover img {
+  transform: translate(20px);
+}
+.service-card-title {
+}
+.service-card-des {
+  height: 150px;
+}
+
+.pricing {
+  background-color: #eceafe;
+  height: 100vh;
+}
+
+.slick-dots {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-dots li {
+  width: 10px !important;
+  height: 10px !important;
+  background-color: transparent;
+  border: 2px solid #7e76f9;
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active {
+  width: 15px !important;
+  height: 15px !important;
+  background-color: #7e76f9 !important;
+}
+
+.contant {
+  background-image: url("../_Data/SVG/Asset\ 2.svg"),
+    url("../_Data//SVG/Asset\ 6.svg");
+  /* background-color: #eceafe; */
+  background-size: auto 80%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  /* height: 100vh; */
+  /* padding: 130px 0 0 0; */
+}
+
+.social-icon a {
+  transition: 0.5s;
+}
+
+.social-icon a:hover {
+  transform: scale(1.5);
+}
+
+@media screen and (max-width: 780px) {
+  .site-nav .nav-link {
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    background: #ffffff;
+    box-shadow: 0 0 5px #00000015;
+    border-radius: 10em;
+  }
+
+  .navbar-nav {
+    padding-top: 20px;
+  }
+
+  .contant {
+    background-size: auto 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  * {
+    font-size: 10px;
+  }
+
+  .site-nav .nav-link {
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    background: #ffffff;
+    box-shadow: 0 0 5px #00000015;
+    border-radius: 10em;
+  }
+
+  .navbar-nav {
+    padding-top: 20px;
+  }
+  .home_img {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .w {
+    width: 100%;
+  }
+
+  .footer {
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+
+  .scroll_next {
+    bottom: 10px;
+    left: auto;
+    right: 10px;
+    margin: 10px;
+  }
+
+  .social-v {
+    bottom: 91px;
+    left: 366px;
+    display: none;
+  }
+  .pricing {
+    /* height: 0; */
+  }
+
+  .contant {
+    /* background-size: auto 80%; */
+  }
+}
